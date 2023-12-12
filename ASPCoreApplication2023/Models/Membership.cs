@@ -2,7 +2,7 @@
 {
     public class Membership
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public bool SignUpFree { get; set; }
         public int DurationInMonths { get; set; }
         public decimal DiscountRate { get; set; }

@@ -1,10 +1,14 @@
 ﻿@model IEnumerable<Movie>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movies";
 }
 
-<h1>Index</h1>
+@{
+    ViewBag.Title = "List of Movies";
+}
+
+<h1>List of Movies</h1>
 
 <p>
     <a asp-action="Create">Create New</a>

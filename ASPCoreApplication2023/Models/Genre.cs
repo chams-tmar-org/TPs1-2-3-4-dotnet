@@ -2,7 +2,7 @@
 {
     public class Genre
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string? GenreName { get; set; }
 
         // On ajoute la propriété de navigation pour représenter la relation

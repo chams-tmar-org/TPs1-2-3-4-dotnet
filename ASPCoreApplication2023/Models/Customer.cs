@@ -7,7 +7,7 @@ namespace ASPCoreApplication2023.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string? Name { get; set; }
         public Membership? Membership { get; set; }
         public ICollection<Movie>? Movies { get; set; }

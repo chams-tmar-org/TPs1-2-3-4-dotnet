@@ -2,7 +2,6 @@
 
 namespace ASPCoreApplication2023.Repositories
 {
-    {
     public class MovieRepository
     {
         public readonly ApplicationDbContext _db;

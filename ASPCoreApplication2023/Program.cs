@@ -1,10 +1,14 @@
 using ASPCoreApplication2023.Models;
+using ASPCoreApplication2023.Repositories;
+using ASPCoreApplication2023.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<MovieService>();
+builder.Services.AddScoped<MovieRepository>();
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"
